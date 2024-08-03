@@ -1,0 +1,15 @@
+device = 'cpu'
+random_seed = 42
+setting = 'composed'
+load = false
+
+# composed
+repositioner = '1669212942_lr_d001_epsDecay_675_bs_128_rms_60000_more_data_target_update_11_dueling_v2_one_fc_layer_v3__3500'
+request_predictor = 'SingleCellFCNNv3_1_128_0.001'
+single_cell = true
+
+# # baseline
+# repositioner = '1669815958_rms_60000_city_wide__4000'
+# request_predictor = 'WholeCityCNNv3'
+# single_cell = false
+

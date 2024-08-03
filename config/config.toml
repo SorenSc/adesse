@@ -1,0 +1,55 @@
+# dev = 'cuda:0'
+dev = 'cpu'
+
+start = 2015-01-01T00:00:00
+end = 2016-07-01T00:00:00
+time_bin_size = 10
+time_shift = false
+file_name_ext = 'nyc_2015_2016_v3'
+model_name_ext = 'rms_15000_fancy_replay_memory'
+
+pgc_grid_bl_lat = 40.5879173223792
+pgc_grid_bl_lon = -74.08982909538462
+pgc_grid_tr_lat = 40.90138693938339
+pgc_grid_tr_lon = -73.6856599028536
+grid_cell_area = 250000
+
+red_t = 24
+red_b = 26
+red_l = 10
+red_r = 39
+finer_input = false
+
+batch_size = 128
+
+n_runs = 25
+
+evaluate_model = true
+
+learning_rate = 0.001
+gamma = 0.99
+eps_start = 0.9
+eps_end = 0.05
+eps_decay = 675
+target_update = 11
+
+n_episodes = 15001
+
+episode_length = 54  # 9 hours divided into 10 minute time-bins
+replay_memory_size = 15000
+
+reward_pickup_two_passengers = 20
+reward_pickup_one_passenger = 10
+reward_no_pickup_but_movement = -1
+reward_no_pickup_no_movement = 0
+
+test_size = 8640
+validation_size = 0.2
+dataset_len = 0
+nof_input_maps = 4
+random_seed = 42
+
+X_mean = 11.858476560141144
+X_std = 16.399040080276734
+
+normalized = true
